@@ -1,0 +1,343 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 1800vh;
+  background: linear-gradient(#17003a, #515c74);
+  overflow-x: hidden;
+}
+.intro-text {
+text-align: center;
+    font-size: 50px;
+    color: #fff;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.intro-text.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#helloTxt {
+  opacity: 0;
+  -webkit-transform: scale(0.9);
+     -moz-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+       -o-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: all 1s ease-in-out;
+     -moz-transition: all 1s ease-in-out;
+      -ms-transition: all 1s ease-in-out;
+       -o-transition: all 1s ease-in-out;
+          transition: all 1s ease-in-out;
+}
+
+#helloTxt.visible {
+  opacity: 1;
+  -webkit-transform: none;
+     -moz-transform: none;
+      -ms-transform: none;
+       -o-transform: none;
+          transform: none;
+}
+
+#scrollTxt {
+   opacity: 0;
+  transform: translateX(-20px);
+  transition: all 1s ease-in-out;
+}
+
+#scrollTxt.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+#checkTxt {
+		opacity: 0;
+		-webkit-transform: rotate(40deg) scale(0.5);
+			 -moz-transform: rotate(40deg) scale(0.5);
+				-ms-transform: rotate(40deg) scale(0.5);
+				 -o-transform: rotate(40deg) scale(0.5);
+						transform: rotate(40deg) scale(0.5);
+		-webkit-transition: all 0.8s ease-in-out;
+			 -moz-transition: all 0.8s ease-in-out;
+				-ms-transition: all 0.8s ease-in-out;
+				 -o-transition: all 0.8s ease-in-out;
+						transition: all 0.8s ease-in-out;
+	}
+	#checkTxt.visible {
+		opacity: 1;
+		-webkit-transform: none;
+			 -moz-transform: none;
+				-ms-transform: none;
+				 -o-transform: none;
+						transform: none;
+	}
+
+
+section {
+  position: relative;
+  height: 100vh;
+  padding: 100px;
+}
+
+#stars {
+  mix-blend-mode: lighten;
+  position: fixed;
+  right: -1000px;
+  width: 2500px;
+}
+
+#human {
+    /*opacity: 0;
+  transform: rotate(-45deg) scale(0.5);
+  transition: all 1s ease-in-out;*/
+    
+}
+
+#human.visible {
+  opacity: 1;
+  transform: rotate(0) scale(1);
+}
+
+#labels{
+  position: fixed;
+  top: 50%;
+  left: 60%;
+  transform: translateY(-50%);
+  padding: 20px 200px;
+}
+
+.custom-Text{
+
+  font-size: 30px;
+  color: #ccc;
+    -webkit-transform: rotate(40deg) scale(0.5);
+       -moz-transform: rotate(40deg) scale(0.5);
+        -ms-transform: rotate(40deg) scale(0.5);
+         -o-transform: rotate(40deg) scale(0.5);
+            transform: rotate(40deg) scale(0.5);
+    -webkit-transition: all 0.8s ease-in-out;
+       -moz-transition: all 0.8s ease-in-out;
+        -ms-transition: all 0.8s ease-in-out;
+         -o-transition: all 0.8s ease-in-out;
+            transition: all 0.8s ease-in-out;
+}
+.custom-Text.visible {
+
+  -webkit-transform: none;
+     -moz-transform: none;
+      -ms-transform: none;
+       -o-transform: none;
+          transform: none;
+}
+#skin {
+    opacity: 0;
+}
+
+#skin.visible {
+    opacity: 1;
+}
+
+#bones {
+    opacity: 0;
+}
+
+#bones.visible {
+    opacity: 1;
+}
+
+#joints {
+    opacity: 0;
+}
+
+#joints.visible {
+    opacity: 1;
+}
+
+#peripheralNerves {
+    opacity: 0;
+}
+
+#peripheralNerves.visible {
+    opacity: 1;
+}
+
+#teeth {
+    opacity: 0;
+}
+
+#teeth.visible {
+    opacity: 1;
+}
+
+#heart {
+    opacity: 0;
+}
+
+#heart.visible {
+    opacity: 1;
+}
+
+#bloodVessels {
+    opacity: 0;
+}
+
+#bloodVessels.visible {
+    opacity: 1;
+}
+
+#boneMarrow {
+    opacity: 0;
+}
+
+#boneMarrow.visible {
+    opacity: 1;
+}
+
+#muscles {
+    opacity: 0;
+}
+
+#muscles.visible {
+    opacity: 1;
+}
+
+#retina {
+    opacity: 0;
+}
+
+#retina.visible {
+    opacity: 1;
+}
+
+#thyroid {
+    opacity: 0;
+}
+
+#thyroid.visible {
+    opacity: 1;
+}
+
+#kidneys {
+    opacity: 0;
+}
+
+#kidneys.visible {
+    opacity: 1;
+}
+
+.custom-cursor {
+    position: fixed;
+    width: 76px;
+    opacity: 0;
+    -webkit-transform: rotate(40deg) scale(0.5);
+    -moz-transform: rotate(40deg) scale(0.5);
+    -ms-transform: rotate(40deg) scale(0.5);
+    -o-transform: rotate(40deg) scale(0.5);
+    transform: rotate(40deg) scale(0.5);
+    -webkit-transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    -ms-transition: all 0.8s ease-in-out;
+    -o-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+  }
+
+  .custom-cursor.visible {
+    opacity: 1;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+  }
+
+  #cursor0 {
+    left: 470px;
+    top: 15px;
+  }
+
+  #cursor1 {
+    left: 470px;
+    top: 45px;
+  }
+
+#cursor2 {
+   left: 470px;
+    top: 65px;
+  }
+  #cursor3 {
+    left: 500px;
+    top: 150px;
+  }
+  #cursor4 {
+    left: 320px;
+    top: 100px;
+  }
+  #cursor5 {
+    left: 500px;
+    top: 230px;
+  }
+  #cursor6 {
+    left: 700px;
+    top: 100px;
+  }
+  #cursor7 {
+    left: 440px;
+    top: 330px;
+  }
+  #cursor8 {
+    left: 520px;
+    top: 350px;
+  }
+  #cursor9 {
+    left: 440px;
+    top: 370px;
+  }
+  #cursor10 {
+    left: 440px;
+    top: 410px;
+  }
+  #cursor11 {
+    left: 500px;
+    top: 570px;
+  }
+
+section img {
+  position: absolute;
+  top: 0;
+  object-fit: cover;
+}
+.spacer{
+  min-height: 100vh;
+}
+
+/***Reponsive queries***/
+@media (max-width: 768px) {
+    #labels{
+        left:40%;
+    }
+}
+@media (max-width: 660px) {
+    #labels{
+        left:10%;
+    }
+}
+@media (max-width: 391px) {
+    #labels{
+        left:0%;
+
+    }
+}
+@media (max-width: 360px) {
+    #labels{
+        left:-60%;
+
+    }
+}
